@@ -73,9 +73,7 @@ The customer dashboard provides insights into:
 - Revenue by Education
 - Revenue by Card Category
 - Revenue by State
-- Customer Segmentation<img width="1317" height="727" alt="Screenshot 2026-07-09 215336" src="https://github.com/user-attachments/assets/8841713f-8d11-4cc7-9212-9ba2394456ef" />
-
-
+- Customer Segmentation
 ---
 
 ## Transaction Dashboard
@@ -91,7 +89,6 @@ The transaction dashboard monitors:
 - Customer Acquisition
 - Activation Rate
 - Delinquency Rate
-<img width="1302" height="720" alt="Screenshot 2026-07-09 220110" src="https://github.com/user-attachments/assets/2e6ff380-8197-488a-8806-93dc73962258" />
 
 ---
 
