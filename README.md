@@ -101,8 +101,7 @@ The following calculated columns and measures were developed to support dynamic 
 
 ### Calculated Columns
 
-- Age Group-
-  AgeGroup = SWITCH(
+- AgeGroup = SWITCH(
 TRUE(),
 'public cust_detail'[customer_age] < 30, "20-30",
 'public cust_detail'[customer_age] >= 30 && 'public cust_detail'[customer_age] < 40, "30-40",
@@ -111,31 +110,26 @@ TRUE(),
 'public cust_detail'[customer_age] >= 60, "60+",
 "unknown")
 
-- Income Group
-  IncomeGroup = SWITCH(
+- IncomeGroup = SWITCH(
 TRUE(),
 'public cust_detail'[income] < 35000, "Low",
 'public cust_detail'[income] >= 35000 && 'public cust_detail'[income] <70000, "Med",
 'public cust_detail'[income] >= 70000, "High",
 "unknown")
 
-- Week Number
-  week_num2 = WEEKNUM('public cc_detail'[week_start_date])
+- week_num2 = WEEKNUM('public cc_detail'[week_start_date])
 
 ### **Measures**
 
-- Revenue
-  Revenue = 'public cc_detail'[annual_fees] + 'public cc_detail'[total_trans_amt] + 'public cc_detail'[interest_earned]
+- Revenue = 'public cc_detail'[annual_fees] + 'public cc_detail'[total_trans_amt] + 'public cc_detail'[interest_earned]
 
-- Current Week Revenue
-  Current_week_Reveneue = CALCULATE(
+- Current_week_Reveneue = CALCULATE(
 SUM('public cc_detail'[Revenue]),
 FILTER(
 ALL('public cc_detail'),
 'public cc_detail'[week_num2] = MAX('public cc_detail'[week_num2])))
 
-- Previous Week Revenue
-  Previous_week_Reveneue = CALCULATE(
+- Previous Week Revenue = CALCULATE(
 SUM('public cc_detail'[Revenue]),
 FILTER(
 ALL('public cc_detail'),
