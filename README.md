@@ -75,7 +75,6 @@ The customer dashboard provides insights into:
 - Revenue by State
 - Customer Segmentation
 ---
-
 ## Transaction Dashboard
 
 The transaction dashboard monitors:
@@ -89,7 +88,6 @@ The transaction dashboard monitors:
 - Customer Acquisition
 - Activation Rate
 - Delinquency Rate
-
 ---
 
 # **DAX Implementation**
