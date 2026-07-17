@@ -1,4 +1,4 @@
-# **Credit Card Customer & Revenue Analytics Dashboard**
+# **credit-card-revenue-dashboard**
 
 ## **Project Overview**
 
